@@ -10,12 +10,7 @@ const {
 const cors = require("cors");
 
 //middleware
-router.use(
-    cors(/*{
-         credentials: true,
-         origin: "http://localhost:5173",
-     }*/)
-);
+router.use(cors());
 
 router.route("/").get(test);
 router.route("/register").post(registerUser);

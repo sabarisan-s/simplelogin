@@ -9,8 +9,8 @@ import Login from "./pages/Login";
 import { UserContextProvider } from "./context/userContext";
 import Dashboard from "./pages/Dashboard";
 
-axios.defaults.baseURL = "http://localhost:8000";
-axios.defaults.withCredentials = true;
+axios.defaults.baseURL = "https://simplelogin-o1dh.onrender.com/";
+// axios.defaults.withCredentials = true;
 
 function App() {
     return (

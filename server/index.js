@@ -6,11 +6,11 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const cookieParser = require("cookie-parser");
 
-app.use(express.json());
+app.use(express.json()); 
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use("/", require("./routes/authRouter"));
-
+ 
 mongoose
     .connect(process.env.MONGODB_URL)
 
